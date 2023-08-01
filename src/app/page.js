@@ -5,7 +5,9 @@ import { useRouter } from "next/navigation";
 const Home = () => {
   const navigation = useRouter();
   return (
-    <div className="flex justify-center items-center h-screen w-full gap-3">
+    <div className="flex flex-col justify-center items-center h-screen w-full gap-3">
+      <div>API Demo</div>
+      <div>Server-side vs Client-side</div>
       <button
         type="button"
         onClick={() => navigation.push("/server")}
